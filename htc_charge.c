@@ -177,24 +177,6 @@ int main(int argc, char *argv[]) {
 		}
 	}
 
-#define PRODUCT_M8_MTP		0x0f25
-#define PRODUCT_M8_MTP_ADB		0x061a
-#define PRODUCT_M8_MTP_UMS	0x0fb5
-#define PRODUCT_M8_MTP_ADB_UMS		0x0fb4
-#define PRODUCT_GENERIC_2	0x2008
-#define PRODUCT_WINDOWS_8S	    0xf0ca
-#define PRODUCT_M8_VERIZON    0x07cb
-#define PRODUCT_M8       0x07ca
-
-#define PRODUCT_ONE 0x07ae
-#define PRODUCT_M8_GOOGLE 0x060b
-#define PRODUCT_WINDOWS_8X1 0x0ba1
-#define PRODUCT_WINDOWS_8X2 0x0ba2
-#define PRODUCT_GENERIC_1 0x0c02
-#define PRODUCT_ONE_S1 0x0cec
-#define PRODUCT_ONE_S2 0x0df8
-#define PRODUCT_ONE_S3 0x0df9
-
 	if (count < 1) {
 		fprintf(stderr, "htc_charge: no such device or an error occured\n");
 		ret = 3;
