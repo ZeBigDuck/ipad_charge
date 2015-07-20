@@ -1,8 +1,8 @@
 #!/bin/sh
 
-apt-get install -y build-essential libusb-1.0-0 libusb-1.0-0-dev vim git-core git-doc
-git clone https://github.com/mkorenkov/ipad_charge.git
+sudo pacman --noconfirm -Sy libusb vim-runtime vim-plugins git
+git clone https://github.com/micahwelf/ipad_charge.git
 cd ipad_charge
-make
-make install
-cd -
+#make
+#make install
+#cd -
