@@ -1,9 +1,13 @@
-Apple charger utility 
+Apple & HTC charger utility 
 ======================
 USB charging control utility used to enable/disable charging of an Apple device connected to USB port.
 
 Supported devices:
 ------------------
+* HTC One
+* HTC One S
+* HTC One (M8)
+* HTC (Windows, 8S)
 * iPad
 * iPad2
 * iPad3
@@ -23,13 +27,15 @@ Linux, GCC, Make, libusb-1.0
 
 Wiki:
 -----
-[https://github.com/mkorenkov/ipad_charge/wiki](https://github.com/mkorenkov/ipad_charge/wiki)
+[https://github.com/micahwelf/ipad_charge/wiki](https://github.com/mkorenkov/ipad_charge/wiki)
 
 libusb-1.0
 ----------
 [git://git.libusb.org/libusb.git](Official Repository)
 
 If you use Fedora 17 x86_64, just compile libusb-1.0 from official repository then you will be able to `make` ipad_charge.
+
+Specialized for Arch Linux.
 
 For Fedora 18 i686 or x86_64, you will need libusbx devel installed:
 ```
@@ -41,4 +47,5 @@ Authors & Maintainers:
 * Ondrej Zary
 * Max Korenkov
 * Pranava Swaroop
+* Micah Waddoups
 
