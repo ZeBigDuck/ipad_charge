@@ -153,22 +153,21 @@ int main(int argc, char *argv[]) {
 				fprintf(stderr, "htc_charge: %s\n", libusb_strerror(ret));
 				continue;
 			}
-			if (desc.idVendor == VENDOR_HTC && (desc.idProduct == PRODUCT_IPAD1
-					|| desc.idProduct == PRODUCT_IPAD2
-					|| desc.idProduct == PRODUCT_IPAD2_3G
-					|| desc.idProduct == PRODUCT_IPAD2_4
-					|| desc.idProduct == PRODUCT_IPAD2_3GV
-					|| desc.idProduct == PRODUCT_IPAD3
-					|| desc.idProduct == PRODUCT_IPAD3_4G
-					|| desc.idProduct == PRODUCT_IPOD_TOUCH_2G
-					|| desc.idProduct == PRODUCT_IPHONE_3GS
-					|| desc.idProduct == PRODUCT_IPHONE_4_GSM
-					|| desc.idProduct == PRODUCT_IPOD_TOUCH_3G
-					|| desc.idProduct == PRODUCT_IPHONE_4_CDMA
-					|| desc.idProduct == PRODUCT_IPOD_TOUCH_4G
-					|| desc.idProduct == PRODUCT_IPHONE_4S
-					|| desc.idProduct == PRODUCT_IPHONE_5
-					|| desc.idProduct == PRODUCT_IPAD4)) {
+			if (desc.idVendor == VENDOR_HTC && (desc.idProduct == PRODUCT_M8_MTP
+					|| desc.idProduct == PRODUCT_M8_MTP_ADB
+					|| desc.idProduct == PRODUCT_M8_MTP_UMS
+					|| desc.idProduct == PRODUCT_M8_MTP_ADB_UMS
+					|| desc.idProduct == PRODUCT_GENERIC_2
+					|| desc.idProduct == PRODUCT_M8_VERIZON
+					|| desc.idProduct == PRODUCT_M8
+					|| desc.idProduct == PRODUCT_ONE
+					|| desc.idProduct == PRODUCT_M8_GOOGLE
+					|| desc.idProduct == PRODUCT_WINDOWS_8X1
+					|| desc.idProduct == PRODUCT_WINDOWS_8X2
+					|| desc.idProduct == PRODUCT_GENERIC_1
+					|| desc.idProduct == PRODUCT_ONE_S1
+					|| desc.idProduct == PRODUCT_ONE_S2
+					|| desc.idProduct == PRODUCT_ONE_S3)) {
 
 				if (set_charging_mode(dev, enable) < 0)
 					fprintf(stderr, "htc_charge: error setting charge mode\n");
@@ -178,8 +177,6 @@ int main(int argc, char *argv[]) {
 		}
 	}
 
-#define CTRL_OUT	(LIBUSB_REQUEST_TYPE_VENDOR | LIBUSB_ENDPOINT_OUT)
-#define VENDOR_HTC		0x0bb4
 #define PRODUCT_M8_MTP		0x0f25
 #define PRODUCT_M8_MTP_ADB		0x061a
 #define PRODUCT_M8_MTP_UMS	0x0fb5
